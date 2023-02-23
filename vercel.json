@@ -3,12 +3,9 @@
     "builds": [
         {
             "src": "public/index.php",
-            "use": "vercel/php"
+            "use": "vercel/php@0.8.2"
         }
     ],
-    "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.5.2" }
-    },
     "routes": [
         {
             "src": "/(.*)",
