@@ -1,12 +1,13 @@
 {
     "version": 2,
-    "build": {
-        "env": {
-            "NODE_VERSION": "14.x"
+    "builds": [
+        {
+            "src": "public/index.php",
+            "use": "vercel/php"
         }
-    },
+    ],
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.4.0" }
+        "api/index.php": { "runtime": "vercel-php@0.5.2" }
     },
     "routes": [
         {
